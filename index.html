@@ -33,7 +33,7 @@
  <button>about page </button>
 </a>
 
-        <link rel="stylesheet" href="todo.js">
+    
         <div id="logo.jpg"> 
             <img src="https://i.pinimg.com/originals/de/61/fc/de61fc0b58e1d0ad190d6f6a741ad93f.jpg"> 
         </div>
@@ -71,6 +71,38 @@
 </tr>
 </table>
     </main>
+    <script>
+
+
+let userName = prompt("Please enter your name", "what is your name ?");
+
+let userGender = confirm("are you a male  ? "  );
+
+
+ let userAge = prompt("how old are you ? ") ; 
+ if (userAge !== "0" ){
+     alert ("great your age is greater than zero   ");
+ }
+ else   {
+
+    alert ("sorry , you can be zero  ")
+ }
+
+ let massage = confirm ("show welcome massage ? ") ;
+ if (massage === true && userGender === true  )
+ {
+     
+        console.log("welcome Mr   " + userName);
+ }
+     else if (massage === true  && userGender  === false )
+        {
+            console.log("welcome Ms  " + userName);
+        } 
+
+
+
+    </script>
+    <script src="./app.js"></script>
 <footer>
 <h2>mohammad alshraideh : &copy;</h2>
 </footer>
