@@ -76,28 +76,43 @@
 
 let userName = prompt("Please enter your name", "what is your name ?");
 
-let userGender = confirm("are you a male  ? "  );
+let userGender = prompt("what is your gender ?"  , "male/female ? " );
 
 
  let userAge = prompt("how old are you ? ") ; 
- if (userAge !== "0" ){
+ if (userAge !== 0 ){
      alert ("great your age is greater than zero   ");
  }
  else   {
 
-    alert ("sorry , you can be zero  ")
+    alert ("sorry , your age cannt be zero  ")
  }
 
  let massage = confirm ("show welcome massage ? ") ;
- if (massage === true && userGender === true  )
- {
-     
-        console.log("welcome Mr   " + userName);
- }
-     else if (massage === true  && userGender  === false )
-        {
-            console.log("welcome Ms  " + userName);
-        } 
+
+      if (userGender.toLowerCase() === "male")
+      {
+       
+                          
+                           alert ("welcome Mr    " + userName);
+                          
+ 
+                         
+                          
+        }
+          
+      else if (userGender.toLowerCase() === "female")
+      {
+                    
+                      
+        alert ("welcome Ms   " + userName);
+                        
+                
+        }else {
+            alert ("welcome   " + userName);
+        }
+
+    
 
 
 
