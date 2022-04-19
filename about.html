@@ -5,61 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about.html</title>
+<style>
+header{
+flex: content;
+background-color: antiquewhite;
 
+}
+h2 , p {
+font-size:x-large;
+font-weight: 400;
+
+color: rgb(102, 4, 9);
+background-color: blanchedalmond;
+
+} 
+h3 {
+  position: absolute; bottom: 10px ; left:10px ;
+  font-size: x-large;
+  background-color: grey;
+  border: 1px solid #000;
+
+}
+form {
+position:absolute ;
+bottom: 100px ;
+background-color: rgb(220, 229, 230);
+
+}
+
+
+
+</style>
 </head>
 <body>
     <header>
-        <h1>ToDo</h1>
+       
+      <a style="display:inline-flex; width: 100px ;height: 120px; left: 0 ; top : 15px ; " href="#"><img  id="logo" src="https://i.pinimg.com/originals/40/7b/1b/407b1b098b2f06b59c292a7ab70f4bf3.jpg"></a>
 
-        <a href="index.html">
+      <h1 style="position: absolute; right:900px ; top:15px ; font-size: xx-large ;   
+      font-weight: 700; margin-top: auto;
+      font-style: italic; color: rgb(151, 5, 5);
+      padding: 10px;  " >ToDo</h1>
+
+        <a style="position: absolute; right: 10px; top: 10px; border: 1px solid #550303; 
+        text-decoration:none; 
+        display:inline-block;
+        text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+        font-weight:bold; 
+        color: #02154b; " href="index.html">
           <button>home page </button>
         </a>
 
        
-        <div id="logo"> 
-            <img src="https://i.pinimg.com/originals/de/61/fc/de61fc0b58e1d0ad190d6f6a741ad93f.jpg"> 
-        </div>
+       
 
     </header>
     <main>
         <section>
-            <h2>my information </h2>
-            <p>my name is mohammad alshraideh , i am 26 years old . </p>
+            <h2 style="background-color: floralwhite;" >MOHAMMAD ALSHRAIDEH </h2>
+            <p>my name is mohammad alshraideh , i am 26 years old and i am a great web developer. </p>
             <p>my email : mhmd.shrydh1996@gmail.com</p>
-            <img src="https://scontent.famm9-1.fna.fbcdn.net/v/t39.30808-6/239497497
-            _4006724572771008_4538407019550156009_n.jpg?stp=dst-jpg_p206x206&_nc_cat
-            =111&ccb=1-5&_nc_sid=da31f3&_nc_eui2=AeGytFsuKrkbNcI0-KMpH1dJ5qGjeicDvYHm
-            oaN6JwO9gblfMF24jxpQ6zqL2BNU_CTTilj1lVAfc24tYXgfGBXn&_nc_ohc=CVdtg_A8YoEAX
-            8q60W9&tn=-KDfp4Cu1Sosxer3&_nc_zt=23&_nc_ht=scontent.famm9-1.fna&oh=00_AT
-            _gERY74LKHukxCe00R7SRZ6ATP6AEzOjc4v
-            PgT9JcJ0g&oe=625DE31A" alt="">
+            <a href="https://tinypic.host/i/AH3V8"><img src="https://tinypic.host/images/2022/04/19/mmmm.md.jpg" alt="mmmm.md.jpg"></a>
             <div class="container">
                 <div style="text-align:center">
-                  <h2>Contact Us</h2>
-                  <p> leave us a message:</p>
+                  <h2 style="position: absolute; bottom:270px ; left: 10px  ; background-color: darkgray; color: #000; " >Contact Us</h2>
+                  <p style="position: absolute; right:888px ; bottom: 270px ; background-color: darkgrey; color: #000; " > leave us a message:</p>
                 </div>
                 <div class="row">
                   <div class="column">
                   </div>
                   <div class="column">
                     <form action="/action_page.php">
-                      <label for="fname">First Name</label>
+                      <label style="color: darkgreen ; font-size: larger;" for="fname">First Name</label>
                       <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-                      <label for="lname">Last Name</label>
+                      <label style="color: darkgreen ; font-size: larger;" for="lname">Last Name</label>
                       <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-                      <label for="email">email</label>
+                      <label style="color: darkgreen ; font-size: larger;" for="email">email</label>
                       <input type="text" id="email" name="your email" placeholder="Your email..">
 
-                      <label for="country">Country</label>
+                      <label style="color: darkgreen ; font-size: larger;" for="country">Country</label>
                       <select id="country" name="country">
 
                         <option value="jordan">jordan</option>
                         <option value="canada">Canada</option>
                         <option value="usa">USA</option>
                       </select>
-                      <label for="subject">Subject</label>
+                      <label style="color: darkgreen ; font-size: larger;" for="subject">Subject</label>
                       <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
                       <input type="submit" value="Submit">
                     </form>
@@ -70,7 +103,7 @@
 
     </main>
 <footer>
-<h2>mohammad alshraideh : &copy;</h2>
+<h3  >mohammad alshraideh : all rights reserved  &copy;</h3>
 </footer>
 </body>
 </html>
